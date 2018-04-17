@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* Jessica's CSS Document.
+NOTE: You can replace my name with your name - this part up here is a CSS comment and is not telling the web browser to change the appearance of your html page(s). You could also put other things here, like the colors you picked for a quick reference. I like to do that so I can easily copy and paste the hex numbers when I need them. For Example:
+dark purple: #492174
+ruby:  #B93232
+yellow: #CABD28
+teal: #138988
+black: black
+*/
+
+
+
+/* the html element below is the "background" of your page */
+html {
+font-family: 	"Arial", Verdana,sans-serif;
+background-image: url(darkbluepaint.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+body {
+	font-family: 'Montserrat', 'Roboto', sans-serif;
+	width: 761px;
+	margin: 1.5em auto; /* this + a defined width, centers the body content */
+	border-color: #303;
+	border-style: solid;
+	border-width: 15px;
+	background-image: url(white-texture.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.spacing-body {
+	padding: 10px;
+}
+
+h1 {
+	font-family: 	"Arial", Verdana,sans-serif;
+	text-align: center;
+	background-color: #3CF;
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+
+}
+
+h2 {
+	font-family: 	"Arial", Verdana,sans-serif;
+	padding: 7px;
+	color: black;
+}
+
+h3 {
+	font-family: 	"Arial", Verdana,sans-serif;
+	color: black;
+}
+/* navigation */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: black;
+}
+
+.nav-elements {
+    float: left;
+}
+
+.nav-elements a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-elements a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.nav-elements a.active {
+    color: white;
+    background-color: darkgrey;
+}
+
+/* Change the color of links on hover */
+
+
+/* Add a color to the active/current link */
+
+
+
+
+/* IMPORTANT: this will put a border around ALL images - so the banner AND the image of you. You may want to remove the border or change it! */
+img {
+	border-color: #B93232;
+	border-style: dotted;
+	border-width: 3px;
+}
+
+
+/* The code below here alters your links */
+a {
+  font-weight: bold;
+	text-decoration: none;
+	color: #492174;
+
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #138988;
+	font-weight: bold;
+}
+
+a:visited {
+	text-decoration: line-through;
+}
+
+a:active {
+	background-color: #CABD28;
+}
+
+.banner {
+	width: 400px;
+	height: auto;
+	width:95%;
+	padding: 15px;
+	align-items: center;
+}
+.portrait {
+	height: 100px;
+	width: 100px;
+
+
+}
+.home-portrait {
+	clear:both;
+	float:right;
+	margin-top: 35px;
+	margin-right: 65px;
+	width: 30%;
+	height: 30%;
+	-ms-transform: rotate(7deg); /* IE 9 */
+	-webkit-transform: rotate(7deg); /* Safari */
+	transform: rotate(7deg);
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.home-portrait:hover {
+	transform: rotate(-30deg);
+}
+
+.animateme {
+	animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 70%;
+
+  }
+
+  to {
+    margin-left: 20%;
+
+  }
+}
+
+
+#footer {
+	background-color: #303;
+	padding-top: 15px;
+	padding-bottom:25px;
+	padding-right: 0px;
+	padding-left: 15px;
+	margin-bottom: -5px;
+	font-size: small;
+	color: white;
+	font-weight: bold;
+	width: 100%;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#footer a {
+	color: yellow;
+}
+
+#footer img {
+	border: none;
+	padding-right: 15px;
+}
+.special {
+	float: right;
+
+}
